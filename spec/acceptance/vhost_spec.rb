@@ -1128,7 +1128,7 @@ describe 'apache::vhost define', :unless => UNSUPPORTED_PLATFORMS.include?(fact(
     end
   end
 
-  describe 'setenv/setenvif' do
+  describe 'setenv/setenvif/setenvifnocase' do
     it 'applies cleanly' do
       pp = <<-EOS
         class { 'apache': }
